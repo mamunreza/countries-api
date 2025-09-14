@@ -2,16 +2,35 @@ using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Add services to the container
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Add CORS for better API accessibility
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
+
 var app = builder.Build();
 
+// Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// Use CORS
+app.UseCors();
+
+// Use HTTPS redirection for production security
+app.UseHttpsRedirection();
 
 var countries = new[]
 {
@@ -32,6 +51,9 @@ app.MapGet("/countries", () =>
     return Results.Ok(new { countries = randomCountries });
 })
 .WithName("GetRandomCountries")
-.WithOpenApi();
+.WithOpenApi()
+.WithSummary("Get random countries")
+.WithDescription("Returns 5 randomly selected countries from a predefined list")
+.Produces<object>(StatusCodes.Status200OK);
 
 app.Run();

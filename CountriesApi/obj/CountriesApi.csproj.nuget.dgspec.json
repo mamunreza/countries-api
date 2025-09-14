@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\BIT\\Dev\\RnD\\Enefit\\ArgoCD\\countries-api\\CountriesApi\\CountriesApi.csproj": {}
+    "C:\\BIT\\Dev\\RnD\\Enefit\\ArgoCD\\countries-api\\CountriesApi\\CountriesApi\\CountriesApi.csproj": {}
   },
   "projects": {
-    "C:\\BIT\\Dev\\RnD\\Enefit\\ArgoCD\\countries-api\\CountriesApi\\CountriesApi.csproj": {
+    "C:\\BIT\\Dev\\RnD\\Enefit\\ArgoCD\\countries-api\\CountriesApi\\CountriesApi\\CountriesApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\BIT\\Dev\\RnD\\Enefit\\ArgoCD\\countries-api\\CountriesApi\\CountriesApi.csproj",
+        "projectUniqueName": "C:\\BIT\\Dev\\RnD\\Enefit\\ArgoCD\\countries-api\\CountriesApi\\CountriesApi\\CountriesApi.csproj",
         "projectName": "CountriesApi",
-        "projectPath": "C:\\BIT\\Dev\\RnD\\Enefit\\ArgoCD\\countries-api\\CountriesApi\\CountriesApi.csproj",
+        "projectPath": "C:\\BIT\\Dev\\RnD\\Enefit\\ArgoCD\\countries-api\\CountriesApi\\CountriesApi\\CountriesApi.csproj",
         "packagesPath": "C:\\Users\\Muhammad.Reza\\.nuget\\packages\\",
-        "outputPath": "C:\\BIT\\Dev\\RnD\\Enefit\\ArgoCD\\countries-api\\CountriesApi\\obj\\",
+        "outputPath": "C:\\BIT\\Dev\\RnD\\Enefit\\ArgoCD\\countries-api\\CountriesApi\\CountriesApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -22,15 +22,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -47,12 +47,16 @@
         "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[9.0.8, )"
+              "version": "[8.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
             }
           },
           "imports": [
