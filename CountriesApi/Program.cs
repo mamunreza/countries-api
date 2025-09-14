@@ -41,7 +41,7 @@ var countries = new[]
     "Switzerland", "Austria", "Poland", "Czech Republic", "Hungary", "Romania",
     "Greece", "Turkey", "Israel", "Saudi Arabia", "UAE", "Iran", "Iraq",
     "Thailand", "Vietnam", "Indonesia", "Philippines", "Malaysia", "Singapore",
-    "South Korea", "North Korea", "Mongolia", "Kazakhstan", "Ukraine"
+    "South Korea", "North Korea", "Mongolia", "Kazakhstan", "Ukraine", "Bangladesh"
 };
 
 app.MapGet("/countries", () =>
